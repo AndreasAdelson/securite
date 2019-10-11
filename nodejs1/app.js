@@ -29,7 +29,7 @@ app.post('/',async function(req, res) {
         console.log(err)
         throw err;
     }
-    res.end('Merci de t\' etre inscrit');
+    res.sendFile(path.join(__dirname + '/index.html'))
 });
 
 app.listen(3000, function () {
